@@ -85,10 +85,37 @@ radial-gradient(circle at 50% 42%,transparent 0 70px,#a16f2a 71px 72px,transpare
 .contact-grid2{grid-template-columns:1fr}.family-contact{padding:28px 23px}
 }
 
+
+/* V4 mobile/layout corrections */
+.hero:before,.hero:after{display:none!important;content:none!important}
+.hero-peacocks{display:none!important}
+.hero-ornaments{display:flex!important}
+@media(max-width:760px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .gate{width:100%;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:22px 14px;box-sizing:border-box}
+  .gate-card{width:min(100%,560px)!important;max-width:calc(100vw - 28px)!important;margin:0 auto!important;left:auto!important;right:auto!important;transform:none!important;box-sizing:border-box}
+  .hero,.hero-inner,.wrap,.wrap2{width:100%;max-width:100%;box-sizing:border-box;margin-left:auto!important;margin-right:auto!important}
+}
+
+
+/* V5 parent-review polish: cream illustrated countdown + memories */
+.royal-countdown{padding:72px 20px;background:linear-gradient(180deg,#fff8e7,#f9e8c7);color:#5a1023;border-top:1px solid #d9b36b;border-bottom:1px solid #d9b36b}
+.royal-countdown:before{background:radial-gradient(circle at 80% 15%,#d9a64d24,transparent 30%),radial-gradient(circle at 10% 90%,#b88b3920,transparent 30%)}
+.countdown-shell{width:min(1050px,100%);grid-template-columns:.95fr 1.05fr;gap:42px;padding:34px;border:1px solid #d3ad63;background:#fffaf0;box-shadow:0 20px 55px #6d3b2018}
+.couple-art{min-height:430px;border-radius:3px;overflow:hidden;background-image:linear-gradient(#fff8e70f,#fff8e70f),url('wedding-countdown-art.png');background-size:205%;background-position:72% 46%;border:1px solid #dfc58f}
+.couple-art:before{display:none}.couple-art svg{display:none}
+.countdown-copy .kicker{color:#9c6a21}.countdown-copy h2{color:#701328;font-size:clamp(2.2rem,5vw,4.2rem)}
+.countdown-copy .event-meta{color:#76533b}.lux-countdown{gap:10px}.lux-countdown div{background:#f7e8c9;border:1px solid #e5c98e;border-radius:12px;padding:18px 7px}.lux-countdown strong{color:#76142b}.lux-countdown span{color:#795c45}.countdown-note{color:#6e5548}.royal-countdown:after{content:'❀   మా పెళ్లి ప్రయాణం ప్రారంభం   ❀';display:block;text-align:center;margin:25px auto 0;color:#a27228;letter-spacing:.08em}
+.memories{padding:72px 20px!important;background:linear-gradient(180deg,#fff7e5,#f8e7c8)!important}.memory-card{border-radius:2px!important;box-shadow:0 18px 50px #6d3b2015!important}.memory-art:after{content:'✿';position:absolute;right:-12px;bottom:-10px;color:#bd7b86;font-size:2.2rem}.memory-copy h2{color:#701328!important}.memory-card>.btn{background:#701328}
+@media(max-width:760px){.royal-countdown{padding:48px 14px}.countdown-shell{padding:18px;gap:22px}.couple-art{min-height:330px;background-size:270%;background-position:72% 47%}.countdown-copy h2{font-size:2rem}.royal-countdown:after{font-size:.78rem}.memories{padding:52px 14px!important}}
+
 </style></head><body>
 <section class="opening" id="opening"><div class="opening-card"><div class="auspicious">శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు</div><img class="logo" src="Logo_GS.png" alt="G&S గణేశ చిహ్నం"><h1>కింతాడ వారి<br>పెండ్లి పిలుపు</h1><p>మా ఇంటి శుభకార్యానికి<br>మీకు మా హృదయపూర్వక ఆహ్వానం</p><button class="openbtn" onclick="openInvitation()">శుభలేఖను తెరవండి ✦</button></div></section>
 <main class="site" id="site"><section class="hero"><div class="hero-inner"><div class="kicker">రెండు కుటుంబాలు · రెండు సంప్రదాయాలు · ఒక అందమైన ప్రయాణం</div>
 <div class="hero-peacocks"><span>శుభం</span><span>మంగళం</span></div><img class="logo" src="Logo_GS.png" alt=""><div class="hero-ornaments"><i class="line"></i><span class="lotus">♧</span><i class="line"></i></div><h2>కింతాడ వారి పెళ్లి పిలుపు</h2><div class="names">గోపిక <span style="color:#c99b42">&amp;</span> శివ శంకర్</div><p class="date">25 · 26 · 31 December 2026<br>Kannur · Hyderabad</p><div class="livebar" id="liveWedding"><div class="live-label">LIVE WEDDING COUNTDOWN</div><div class="live-title" id="liveTitle">మా వేడుకలకు ఇంకా...</div><div class="countdown" id="countdown"><b><span id="cdDays">--</span><small>Days</small></b><b><span id="cdHours">--</span><small>Hours</small></b><b><span id="cdMinutes">--</span><small>Minutes</small></b><b><span id="cdSeconds">--</span><small>Seconds</small></b></div></div></div></section>
+
+
+<section class="section invitation"><div class="wrap"><div class="heading"><div class="kicker">సాదర ఆహ్వానం</div><h2>మా కుటుంబ శుభకార్యం</h2></div><div class="inv-card"><img class="logo" src="Logo_GS.png" alt=""><h3>శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు</h3><p class="parents">శ్రీమతి గన్నవరపు విశాలాక్షి<br>శ్రీ కింతాడ కాశీ విశ్వనాథం</p><p class="formal">తమ కుమారుడు</p><div class="couple"><div class="person"><strong>చి. కింతాడ శివ శంకర్</strong><small>M.Sc. (Instrumentation)<br>Process Engineer, Germany</small></div><div class="amp">తో</div><div class="person"><strong>చి. ల. సౌ. గోపిక శ్రీషన్</strong><small>M.Sc. (Electronics Engineering)<br>Development Engineer, Germany</small></div></div><p class="formal">శ్రీమతి షీనా శ్రీషన్ మరియు శ్రీ శ్రీషన్ లీలా శ్రీధరన్ గార్ల ఏకైక కుమార్తె గోపికతో జరిగే వివాహ మహోత్సవానికి తమరు సకుటుంబ సపరివార సమేతంగా విచ్చేసి, వధూవరులను ఆశీర్వదించి, మా ఆతిథ్యాన్ని స్వీకరించి ఈ శుభకార్యాన్ని జయప్రదం చేయవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము.</p><div class="family-note"><strong>ప్రత్యేక ఆహ్వానం</strong><br>కింతాడ ప్రవళిక & మల్లోజు రాకేష్<br><small>చిన్నారుల ప్రేమతో — మల్లోజు ఆస్థా · మల్లోజు ఆరవ్</small></div></div></div></section>
 <section class="royal-countdown" id="countdown-section">
 <div class="countdown-shell">
 <div class="couple-art" aria-hidden="true">
@@ -109,16 +136,15 @@ radial-gradient(circle at 50% 42%,transparent 0 70px,#a16f2a 71px 72px,transpare
 <div class="countdown-copy">
 <div class="kicker">LIVE WEDDING COUNTDOWN</div>
 <h2 id="richLiveTitle">Next: Sangeet · సంగీత్ సంధ్య</h2>
-<div class="event-meta" id="richEventMeta">25 December 2026 · 5:00 PM – 9:00 PM</div>
+<div class="event-meta" id="richEventMeta">25 December 2026 · 5:00 PM – 9:00 PM IST</div>
 <div class="lux-countdown" id="richCountdown">
 <div><strong id="rDays">--</strong><span>DAYS</span></div><div><strong id="rHours">--</strong><span>HOURS</span></div>
 <div><strong id="rMinutes">--</strong><span>MINUTES</span></div><div><strong id="rSeconds">--</strong><span>SECONDS</span></div>
 </div>
-<p class="countdown-note">Two families, two traditions, and one beautiful journey — మా ఆనందాన్ని మీతో పంచుకోవడానికి ఎదురుచూస్తున్నాము.</p>
+<p class="countdown-note">Two families, two traditions, and one beautiful journey — మా ఆనందాన్ని మీతో పంచుకోవడానికి ఎదురుచూస్తున్నాము.</p><div style="margin-top:22px"><a class="btn" href="#events">కార్యక్రమ వివరాలు చూడండి ›</a></div>
 </div></div></section>
 
-<section class="section invitation"><div class="wrap"><div class="heading"><div class="kicker">సాదర ఆహ్వానం</div><h2>మా కుటుంబ శుభకార్యం</h2></div><div class="inv-card"><img class="logo" src="Logo_GS.png" alt=""><h3>శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు</h3><p class="parents">శ్రీమతి గన్నవరపు విశాలాక్షి<br>శ్రీ కింతాడ కాశీ విశ్వనాథం</p><p class="formal">తమ కుమారుడు</p><div class="couple"><div class="person"><strong>చి. కింతాడ శివ శంకర్</strong><small>M.Sc. (Instrumentation)<br>Process Engineer, Germany</small></div><div class="amp">తో</div><div class="person"><strong>చి. ల. సౌ. గోపిక శ్రీషన్</strong><small>M.Sc. (Electronics Engineering)<br>Development Engineer, Germany</small></div></div><p class="formal">శ్రీమతి షీనా శ్రీషన్ మరియు శ్రీ శ్రీషన్ లీలా శ్రీధరన్ గార్ల కుమార్తె గోపికతో జరిగే వివాహ మహోత్సవానికి తమరు సకుటుంబ సపరివార సమేతంగా విచ్చేసి, వధూవరులను ఆశీర్వదించి, మా ఆతిథ్యాన్ని స్వీకరించి ఈ శుభకార్యాన్ని జయప్రదం చేయవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము.</p><div class="family-note"><strong>ప్రత్యేక ఆహ్వానం</strong><br>కింతాడ ప్రవళిక & మల్లోజు రాకేష్<br><small>చిన్నారుల ప్రేమతో — మల్లోజు ఆస్థా · మల్లోజు ఆరవ్</small></div></div></div></section>
-<section class="section events"><div class="wrap"><div class="heading"><div class="kicker">25–26 December 2026</div><h2>Kerala Celebrations · కేరళ వేడుకలు</h2><p>Music, family, tradition &amp; joy — మా వేడుకల అందమైన ఆరంభం.</p></div>
+<section class="section events" id="events"><div class="wrap"><div class="heading"><div class="kicker">25–26 December 2026</div><h2>Kerala Celebrations · కేరళ వేడుకలు</h2><p>Music, family, tradition &amp; joy — మా వేడుకల అందమైన ఆరంభం.</p></div>
 <article class="event"><div class="photo" style="background-image:url('celebration-evening.jpg')"></div><div class="copy"><div class="num">01 · KANNUR</div><h3>Sangeet · సంగీత్ సంధ్య</h3><p>An evening of music, dance, laughter and family — పాటలు, నృత్యాలు, ఆనందంతో మా వేడుకల ఆరంభం.</p><div class="details"><div><span>Date · తేదీ</span><strong>Friday · 25 December 2026</strong></div><div><span>Time · సమయం</span><strong>5:00 PM – 9:00 PM</strong></div><div><span>Venue · వేదిక</span><strong class="venue-soon">Venue to be announced</strong></div></div><div class="actions"><a class="btn alt" href="calendar/sangeet.ics">Add to Calendar · క్యాలెండర్</a></div></div></article>
 <article class="event"><div class="art kerala-art"><div class="art-inner"><div class="art-icon">❀</div><div class="art-title">Kerala Wedding<br>കേരള വിവാഹം</div></div></div><div class="copy"><div class="num">02 · KERALA WEDDING</div><h3>Kerala Wedding · కేరళ వివాహం</h3><p>Kerala traditions, family blessings and a beautiful beginning together.</p><div class="details"><div><span>Date · తేదీ</span><strong>Saturday · 26 December 2026</strong></div><div><span>Time · సమయం</span><strong>10:30 AM</strong></div><div><span>Venue · వేదిక</span><strong>Sadhoo Kalyana Mandapam, Kannur</strong></div><div><span>Lunch</span><strong>Vegetarian Lunch</strong></div></div><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sadhoo+Kalyana+Mandapam+Kannur">Google Maps ↗</a><a class="btn alt" href="calendar/kerala-wedding.ics">Add to Calendar</a></div></div></article></div></section>
 <section class="section hyderabad"><div class="wrap"><div class="heading"><div class="kicker" style="color:#efd89c">31 డిసెంబర్ 2026</div><h2>Hyderabad Celebrations · హైదరాబాద్ వేడుకలు</h2><p>ఒకే రోజులో మూడు సంప్రదాయ వేడుకలు — జీవితాంతం గుర్తుండే ఆరంభం.</p></div>
@@ -172,11 +198,11 @@ function updateRichClock(){
  if(!next){title.textContent="Thank you for celebrating with us ❤️";meta.textContent="మా ఆనందంలో భాగమైనందుకు ధన్యవాదాలు";box.style.display="none";return}
  box.style.display="grid";title.textContent="Next: "+next.name;
  const labels={
- "Sangeet · సంగీత్ సంధ్య":"25 December 2026 · 5:00 PM – 9:00 PM",
- "Kerala Wedding · కేరళ వివాహం":"26 December 2026 · 10:30 AM",
+ "Sangeet · సంగీత్ సంధ్య":"25 December 2026 · 5:00 PM – 9:00 PM IST",
+ "Kerala Wedding · కేరళ వివాహం":"26 December 2026 · 10:30 AM IST",
  "Thread Ceremony · జంధ్యాల కార్యక్రమం":"31 December 2026 · Morning",
  "Haldi · పసుపు వేడుక":"31 December 2026 · Morning",
- "Telugu Wedding · వివాహ మహోత్సవం":"31 December 2026 · 5:00 PM onwards · Muhurtham 7:05 PM"};
+ "Telugu Wedding · వివాహ మహోత్సవం":"31 December 2026 · 5:00 PM onwards · Muhurtham 7:05 PM IST"};
  meta.textContent=labels[next.name]||"";
  let d=Math.max(0,new Date(next.start)-now),days=Math.floor(d/86400000);d%=86400000;
  let h=Math.floor(d/3600000);d%=3600000;let m=Math.floor(d/60000);d%=60000;let s=Math.floor(d/1000);
