@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Gopika Siva Wedding//TE
+BEGIN:VEVENT
+DTSTART:20261225T170000
+DTEND:20261225T210000
+SUMMARY:Sangeet - Gopika & Siva
+LOCATION:Venue to be announced
+DESCRIPTION:Sangeet celebration - venue details will be updated.
+END:VEVENT
+END:VCALENDAR
