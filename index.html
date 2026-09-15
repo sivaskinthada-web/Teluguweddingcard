@@ -173,6 +173,60 @@ radial-gradient(circle at 70% 35%,#d49a3740,transparent 32%)}
  .family-card p,.family-card .family-copy,.family-card .person,.family-card .names{font-size:1.16rem!important;line-height:1.9!important}
 }
 
+
+/* ===== FINAL REVIEW BUILD ===== */
+/* Opening: actual classes are .opening/.opening-card (not .gate/.gate-card). */
+.opening{width:100%;max-width:100vw;overflow:hidden;display:grid;place-items:center;padding:28px;}
+.opening-card{margin-inline:auto;left:auto;right:auto;transform:none;}
+
+/* Classy countdown: event-neutral heading; image + clean typography. */
+.royal-countdown{background:#748367!important;color:#fff!important;border:0!important;padding:84px 22px!important;}
+.royal-countdown:before{background:none!important;}
+.royal-countdown:after{content:none!important;display:none!important;}
+.countdown-shell{width:min(980px,100%);display:block!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;text-align:center;}
+.countdown-copy{padding:0!important;display:flex;flex-direction:column;align-items:center;}
+.countdown-copy .kicker{order:1;color:#f1d28b!important;font-size:.72rem;letter-spacing:.22em;margin-bottom:8px;}
+.countdown-copy h2{order:2;font-family:'Cormorant Garamond',Georgia,serif!important;font-size:clamp(3rem,7vw,5.2rem)!important;font-weight:500!important;line-height:1!important;color:#fff!important;margin:0 0 30px!important;}
+.couple-art{min-height:0!important;height:auto!important;aspect-ratio:1.18/1;max-width:590px;width:100%;margin:0 auto 18px;display:block!important;border:1px solid #ead7a9!important;border-radius:18px!important;background-image:url('wedding-countdown-art.png')!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;box-shadow:0 20px 45px #2d39262e;}
+.countdown-copy .event-meta{order:3;color:#f5ead8!important;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.15rem!important;margin:0 0 24px!important;}
+.lux-countdown{order:4;width:min(760px,100%);grid-template-columns:repeat(4,1fr)!important;gap:0!important;border-top:1px solid #e9dfc066;border-bottom:1px solid #e9dfc066;}
+.lux-countdown div{background:transparent!important;border:0!important;border-radius:0!important;padding:20px 8px!important;}
+.lux-countdown div+div{border-left:1px solid #e9dfc055!important;}
+.lux-countdown strong{font:500 clamp(2rem,5vw,3.3rem) 'Cormorant Garamond',Georgia,serif!important;color:#fff!important;}
+.lux-countdown span{color:#f0e8d3!important;font-size:.62rem!important;letter-spacing:.08em;}
+.countdown-note{order:5;color:#f1e5d0!important;margin:22px auto 0!important;max-width:680px;}
+.countdown-copy>div[style]{order:6;}
+.countdown-copy .btn{background:#f2dfad!important;color:#4f281e!important;}
+
+/* Selected event imagery. */
+.kerala-art{background-image:url('kerala-wedding-art.jpg')!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;}
+.kerala-art .art-inner{display:none!important;}
+
+/* Family copy: more legible on phone and desktop. */
+.family-card h3{font-size:clamp(1.7rem,3vw,2.25rem)!important;line-height:1.4!important;}
+.family-card p{font-size:clamp(1.18rem,2.1vw,1.4rem)!important;line-height:1.9!important;}
+
+@media(max-width:760px){
+ html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important;}
+ .opening{width:100vw!important;min-height:100svh!important;padding:18px 14px!important;place-items:center!important;}
+ .opening-card{width:calc(100vw - 28px)!important;max-width:520px!important;margin:0 auto!important;padding:36px 18px 32px!important;}
+ .opening-card:before{inset:9px!important;}
+ .opening .logo{width:112px!important;}
+ .opening h1{font-size:clamp(2.3rem,10.5vw,3.35rem)!important;line-height:1.25!important;}
+ .opening p{font-size:1.02rem!important;}
+ .royal-countdown{padding:58px 16px!important;}
+ .countdown-copy h2{font-size:clamp(2.7rem,13vw,4rem)!important;margin-bottom:24px!important;}
+ .couple-art{max-width:100%;border-radius:12px!important;margin-bottom:16px;}
+ .countdown-copy .event-meta{font-size:1rem!important;}
+ .lux-countdown{grid-template-columns:repeat(4,1fr)!important;}
+ .lux-countdown div{padding:15px 3px!important;}
+ .lux-countdown strong{font-size:clamp(1.65rem,8vw,2.35rem)!important;}
+ .lux-countdown span{font-size:.52rem!important;}
+ .family-card{padding:34px 22px!important;}
+ .family-card h3{font-size:1.85rem!important;}
+ .family-card p{font-size:1.25rem!important;line-height:1.95!important;}
+}
+
 </style></head><body>
 <section class="opening" id="opening"><div class="opening-card"><div class="auspicious">శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు</div><img class="logo" src="Logo_GS.png" alt="G&S గణేశ చిహ్నం"><h1>కింతాడ వారి<br>పెండ్లి పిలుపు</h1><p>మా ఇంటి శుభకార్యానికి<br>మీకు మా హృదయపూర్వక ఆహ్వానం</p><button class="openbtn" onclick="openInvitation()">శుభలేఖను తెరవండి ✦</button></div></section>
 <main class="site" id="site"><section class="hero"><div class="hero-inner"><div class="kicker">రెండు కుటుంబాలు · రెండు సంప్రదాయాలు · ఒక అందమైన ప్రయాణం</div>
@@ -199,7 +253,7 @@ radial-gradient(circle at 70% 35%,#d49a3740,transparent 32%)}
 </div>
 <div class="countdown-copy">
 <div class="kicker">LIVE WEDDING COUNTDOWN</div>
-<h2 id="richLiveTitle">Next: Sangeet · సంగీత్ సంధ్య</h2>
+<h2 id="richLiveTitle">The celebrations begin soon</h2>
 <div class="event-meta" id="richEventMeta">25 December 2026 · 5:00 PM – 9:00 PM IST</div>
 <div class="lux-countdown" id="richCountdown">
 <div><strong id="rDays">--</strong><span>DAYS</span></div><div><strong id="rHours">--</strong><span>HOURS</span></div>
@@ -213,7 +267,7 @@ radial-gradient(circle at 70% 35%,#d49a3740,transparent 32%)}
 <article class="event"><div class="art kerala-art"><div class="art-inner"><div class="art-icon">❀</div><div class="art-title">Kerala Wedding<br>കേരള വിവാഹം</div></div></div><div class="copy"><div class="num">02 · KERALA WEDDING</div><h3>Kerala Wedding · కేరళ వివాహం</h3><p>Kerala traditions, family blessings and a beautiful beginning together.</p><div class="details"><div><span>Date · తేదీ</span><strong>Saturday · 26 December 2026</strong></div><div><span>Time · సమయం</span><strong>10:30 AM</strong></div><div><span>Venue · వేదిక</span><strong>Sadhoo Kalyana Mandapam, Kannur</strong></div><div><span>Lunch</span><strong>Vegetarian Lunch</strong></div></div><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sadhoo+Kalyana+Mandapam+Kannur">Google Maps ↗</a><a class="btn alt" href="calendar/kerala-wedding.ics">Add to Calendar</a></div></div></article></div></section>
 <section class="section hyderabad"><div class="wrap"><div class="heading"><div class="kicker" style="color:#efd89c">31 డిసెంబర్ 2026</div><h2>Hyderabad Celebrations · హైదరాబాద్ వేడుకలు</h2><p>ఒకే రోజులో మూడు సంప్రదాయ వేడుకలు — జీవితాంతం గుర్తుండే ఆరంభం.</p></div>
 <article class="event"><div class="photo" style="background-image:url('thread-ceremony-new.jpg')"></div><div class="copy"><div class="num">03 · MORNING</div><h3>Thread Ceremony · జంధ్యాల కార్యక్రమం</h3><div class="details"><div><span>సమయం</span><strong>ఉదయం 6:00 – 9:00</strong></div><div><span>వేదిక</span><strong>The Park Hyderabad</strong></div><div><span>ఆతిథ్యం</span><strong>అల్పాహారం</strong></div></div><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=The+Park+Hyderabad">దారి చూపించండి ↗</a><a class="btn alt" href="calendar/thread-ceremony.ics">క్యాలెండర్‌లో చేర్చండి</a></div></div></article>
-<article class="event"><div class="photo" style="background:linear-gradient(135deg,#f4d44f,#d69a18);display:grid;place-items:center;color:#6a3c00;font-size:5rem">✺</div><div class="copy"><div class="num">04 · HALDI</div><h3>Haldi · పసుపు వేడుక</h3><p>పసుపు రంగుల మధ్య నవ్వులు, ఆశీర్వాదాలు, కుటుంబ ఆనందంతో జరిగే వేడుక.</p><div class="details"><div><span>సమయం</span><strong>ఉదయం 10:00 – మధ్యాహ్నం 12:30</strong></div><div><span>వేదిక</span><strong>The Park Hyderabad</strong></div><div><span>డ్రెస్ కోడ్</span><strong>Yellow</strong></div><div><span>ఆతిథ్యం</span><strong>శాకాహార భోజనం</strong></div></div><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=The+Park+Hyderabad">దారి చూపించండి ↗</a><a class="btn alt" href="calendar/haldi.ics">క్యాలెండర్‌లో చేర్చండి</a></div></div></article>
+<article class="event"><div class="photo" style="background-image:url('haldi-art.jpg');background-size:cover;background-position:center;background-repeat:no-repeat"></div><div class="copy"><div class="num">04 · HALDI</div><h3>Haldi · పసుపు వేడుక</h3><p>పసుపు రంగుల మధ్య నవ్వులు, ఆశీర్వాదాలు, కుటుంబ ఆనందంతో జరిగే వేడుక.</p><div class="details"><div><span>సమయం</span><strong>ఉదయం 10:00 – మధ్యాహ్నం 12:30</strong></div><div><span>వేదిక</span><strong>The Park Hyderabad</strong></div><div><span>డ్రెస్ కోడ్</span><strong>Yellow</strong></div><div><span>ఆతిథ్యం</span><strong>శాకాహార భోజనం</strong></div></div><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=The+Park+Hyderabad">దారి చూపించండి ↗</a><a class="btn alt" href="calendar/haldi.ics">క్యాలెండర్‌లో చేర్చండి</a></div></div></article>
 <article class="event"><div class="photo" style="background-image:url('hyderabad-wedding-corrected.jpg')"></div><div class="copy"><div class="num">05 · తెలుగు వివాహం</div><h3>వివాహ మహోత్సవం</h3><p>తెలుగు సంప్రదాయాల నడుమ, పెద్దల ఆశీర్వాదాలతో మా జీవిత ప్రయాణానికి శుభారంభం.</p><div class="details"><div><span>వేడుక ప్రారంభం</span><strong>సాయంత్రం 5:00 గంటలకు</strong></div><div><span>శుభ ముహూర్తం</span><strong class="muhurtham">సాయంత్రం 7:05 గంటలకు</strong></div><div><span>వేదిక</span><strong>Marigold Hotel, Hyderabad</strong></div><div><span>ఆతిథ్యం</span><strong>శాకాహార విందు</strong></div></div><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Marigold+Hotel+Hyderabad">దారి చూపించండి ↗</a><a class="btn alt" href="calendar/telugu-wedding.ics">క్యాలెండర్‌లో చేర్చండి</a></div></div></article></div></section>
 <section class="section family"><div class="wrap"><div class="heading"><div class="kicker">మా కుటుంబాల ప్రేమతో</div><h2>మీ రాకే మా ఆనందం</h2></div><div class="family-grid"><div class="family-card"><h3>వరుని కుటుంబం</h3><p><strong>శ్రీమతి గన్నవరపు విశాలాక్షి</strong><br><strong>శ్రీ కింతాడ కాశీ విశ్వనాథం</strong></p><p>కింతాడ ప్రవళిక & మల్లోజు రాకేష్<br>మల్లోజు ఆస్థా · మల్లోజు ఆరవ్</p></div><div class="family-card"><h3>వధువు కుటుంబం</h3><p><strong>శ్రీమతి లీలా ఎస్. శ్రీషన్</strong><br><strong>శ్రీ షీనా శ్రీషన్</strong></p><p>మీ ఆశీస్సులు మా కొత్త జీవితానికి అమూల్యమైన కానుక.</p></div></div></div></section>
 <section class="section memories" id="memories"><div class="wrap">
@@ -260,7 +314,7 @@ function updateRichClock(){
  if(active){title.textContent="Happening now ❤️ "+active.name;meta.textContent="మా వేడుక ఇప్పుడు జరుగుతోంది";box.style.display="none";return}
  const next=weddingEvents.find(e=>now<new Date(e.start));
  if(!next){title.textContent="Thank you for celebrating with us ❤️";meta.textContent="మా ఆనందంలో భాగమైనందుకు ధన్యవాదాలు";box.style.display="none";return}
- box.style.display="grid";title.textContent="Next: "+next.name;
+ box.style.display="grid";title.textContent="The celebrations begin soon";
  const labels={
  "Sangeet · సంగీత్ సంధ్య":"25 December 2026 · 5:00 PM – 9:00 PM IST",
  "Kerala Wedding · కేరళ వివాహం":"26 December 2026 · 10:30 AM IST",
