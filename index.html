@@ -202,8 +202,48 @@ html,body{width:100%;max-width:100%;overflow-x:hidden} body.invite-lock{overflow
 }
 @media(max-width:420px){.opening-stage{width:calc(100vw - 24px)!important}.opening{padding:12px!important}.opening-card{padding:30px 16px!important}.emerging-card{width:84%}.couple-art{min-height:360px!important}.family-card{padding:34px 18px!important}}
 
+
+/* ===== V8 MESMERISING ENVELOPE OPENING ===== */
+.envelope-gate{position:fixed!important;inset:0!important;z-index:99999!important;width:100%!important;height:100svh!important;min-height:100svh!important;padding:18px!important;display:grid!important;place-items:center!important;overflow:hidden!important;background:radial-gradient(circle at 50% 42%,#6e152a 0%,#3d0715 58%,#24040b 100%)!important;perspective:1400px;transition:opacity .75s ease,visibility .75s ease}
+.envelope-stage{position:relative;width:min(430px,calc(100vw - 30px));height:min(690px,calc(100svh - 34px));display:grid;place-items:center;isolation:isolate}
+.envelope{appearance:none;-webkit-appearance:none;border:0;padding:0;position:absolute;inset:0;margin:auto;width:100%;height:100%;overflow:hidden;cursor:pointer;background:linear-gradient(155deg,#75172f,#4a0919 76%);box-shadow:0 38px 100px #130106aa,0 0 0 1px #c68f3b55;transform-style:preserve-3d;transition:transform .85s cubic-bezier(.2,.75,.2,1),opacity .65s ease;z-index:4;color:#efd99d}
+.envelope:before{content:"";position:absolute;inset:10px;border:1px solid #d5a04e88;z-index:20;pointer-events:none}
+.env-back{position:absolute;inset:0;background:linear-gradient(145deg,#6e142b,#4a0819);z-index:0}
+.env-flap{position:absolute;left:0;right:0;top:0;height:52%;z-index:12;background:linear-gradient(160deg,#7a1b35,#571022);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0;backface-visibility:hidden;transition:transform 1s cubic-bezier(.25,.7,.2,1),filter .5s ease;box-shadow:inset 0 1px #e0aa5570}
+.env-left,.env-right,.env-bottom{position:absolute;inset:0;z-index:7;pointer-events:none}.env-left{background:linear-gradient(130deg,#671127,#4b0919);clip-path:polygon(0 0,51% 50%,0 100%)}.env-right{background:linear-gradient(230deg,#671127,#4b0919);clip-path:polygon(100% 0,49% 50%,100% 100%)}.env-bottom{background:linear-gradient(0deg,#420613,#5b0d21);clip-path:polygon(0 100%,50% 49%,100% 100%)}
+.vine,.lotus-mark{position:absolute;z-index:15;color:#b78335;pointer-events:none;text-shadow:0 0 16px #e3b25822}.vine{top:20%;font:400 5.8rem Georgia,serif;opacity:.55}.vine-l{left:10%;transform:rotate(28deg)}.vine-r{right:10%;transform:scaleX(-1) rotate(28deg)}.lotus-mark{top:45%;font:400 3.2rem Georgia,serif;color:#d2a14d}.lotus-l{left:13%}.lotus-r{right:13%}
+.wax-seal{position:absolute;z-index:30;left:50%;top:50%;width:108px;height:108px;transform:translate(-50%,-50%);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 38% 30%,#fff4d1 0,#e6c27d 36%,#ad773a 72%,#71431e 100%);border:5px double #c4975b;box-shadow:0 8px 18px #190207aa,0 0 0 8px #5a1a2466,0 0 0 1px #f2d79b;transition:transform .45s ease,box-shadow .45s ease,opacity .35s ease}.wax-seal img{width:72%;height:72%;object-fit:contain;filter:sepia(1) saturate(1.2) contrast(1.05)}
+.tap-copy{position:absolute;z-index:25;bottom:8.5%;left:0;right:0;font:600 .78rem 'Noto Sans Telugu',sans-serif;letter-spacing:.14em;color:#efd99d;text-shadow:0 2px 8px #26040d}
+.invite-sheet{position:absolute;z-index:3;left:50%;top:50%;width:84%;height:82%;transform:translate(-50%,-43%) scale(.92);opacity:0;background:linear-gradient(145deg,#fffdf7,#faebca);border:1px solid #c9973d;box-shadow:0 26px 70px #16010788;color:#591122;text-align:center;padding:18px;transition:transform 1.15s cubic-bezier(.16,.86,.25,1),opacity .3s ease;pointer-events:none}.invite-sheet:before{content:"";position:absolute;inset:9px;border:1px solid #d6b36e88}.sheet-inner{height:100%;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px}.sheet-inner img{width:82px;margin-bottom:8px}.sheet-kicker{font:600 clamp(.7rem,2vw,.85rem) 'Noto Serif Telugu',serif;color:#a47428;letter-spacing:.08em}.sheet-inner h2{font:700 clamp(2rem,7vw,3.1rem)/1.35 'Noto Serif Telugu',serif;color:#73142a;margin:22px 0 14px}.sheet-rule{display:flex;align-items:center;gap:12px;color:#c9973d;margin:0 0 14px}.sheet-rule i{display:block;width:48px;height:1px;background:#c9973d}.sheet-inner p{font:600 clamp(1.35rem,5vw,2rem) 'Noto Serif Telugu',serif;margin:5px 0;color:#5c1223}.sheet-inner p b{color:#c9973d}.sheet-inner small{margin-top:14px;letter-spacing:.12em;color:#87573c}
+.envelope-gate.revealing .wax-seal{transform:translate(-50%,-50%) scale(1.12);box-shadow:0 8px 20px #190207aa,0 0 34px 14px #ffc65aaa,0 0 90px 30px #ff9b3c55;opacity:0}.envelope-gate.revealing .env-flap{transform:rotateX(178deg);filter:brightness(1.15);z-index:2}.envelope-gate.revealing .envelope{transform:translateY(18%) scale(.96)}.envelope-gate.revealing .tap-copy{opacity:0}.envelope-gate.card-revealed .invite-sheet{z-index:18;opacity:1;transform:translate(-50%,-73%) scale(1)}.envelope-gate.card-revealed:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:#ffc45b44;filter:blur(42px);animation:goldPulse 1.1s ease both;z-index:2}@keyframes goldPulse{0%{transform:scale(.2);opacity:0}45%{opacity:1}100%{transform:scale(2.5);opacity:0}}
+.envelope-gate.gate-away{opacity:0;visibility:hidden;pointer-events:none}.envelope-gate.gate-away .invite-sheet{transform:translate(-50%,-92%) scale(1.04);opacity:0}.site.open{display:block!important;animation:siteRevealV8 .9s ease both}@keyframes siteRevealV8{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media(max-width:520px){.envelope-stage{width:min(390px,calc(100vw - 26px));height:min(650px,calc(100svh - 30px))}.vine{font-size:4.8rem}.lotus-mark{font-size:2.8rem}.wax-seal{width:94px;height:94px}.invite-sheet{width:86%;height:79%}.sheet-inner h2{font-size:clamp(1.85rem,9vw,2.7rem)}}
+@media(max-height:700px){.envelope-stage{height:calc(100svh - 24px);width:min(360px,calc(100vw - 24px))}.wax-seal{width:86px;height:86px}.tap-copy{bottom:6%}.invite-sheet{height:82%}}
+
 </style></head><body class="invite-lock">
-<section class="opening" id="opening"><div class="opening-stage"><div class="emerging-card" aria-hidden="true"><img src="Logo_GS.png" alt=""><small>TOGETHER WITH OUR FAMILIES</small><strong>Gopika <em>&amp;</em><br>Siva</strong><span>25 · 26 · 31 DECEMBER 2026</span></div><div class="opening-card"><div class="auspicious">శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు</div><img class="logo" src="Logo_GS.png" alt="G&S గణేశ చిహ్నం"><h1>కింతాడ వారి<br>పెండ్లి పిలుపు</h1><p>మా ఇంటి శుభకార్యానికి<br>మీకు మా హృదయపూర్వక ఆహ్వానం</p><button class="openbtn" onclick="openInvitation()">శుభలేఖను తెరవండి ✦</button></div></div></section>
+<section class="opening envelope-gate" id="opening" aria-label="Wedding invitation opening">
+  <div class="envelope-stage" id="envelopeStage">
+    <div class="invite-sheet" aria-hidden="true">
+      <div class="sheet-inner">
+        <img src="Logo_GS.png" alt="">
+        <div class="sheet-kicker">శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు</div>
+        <h2>కింతాడ వారి<br>పెళ్లి పిలుపు</h2>
+        <div class="sheet-rule"><i></i><span>✦</span><i></i></div>
+        <p>గోపిక <b>&amp;</b> శివ శంకర్</p>
+        <small>25 · 26 · 31 DECEMBER 2026</small>
+      </div>
+    </div>
+    <button class="envelope" type="button" onclick="openInvitation()" aria-label="శుభలేఖను తెరవండి">
+      <span class="env-back"></span>
+      <span class="env-flap"></span>
+      <span class="env-left"></span><span class="env-right"></span><span class="env-bottom"></span>
+      <span class="vine vine-l">❧</span><span class="vine vine-r">❧</span>
+      <span class="lotus-mark lotus-l">♧</span><span class="lotus-mark lotus-r">♧</span>
+      <span class="wax-seal"><img src="Logo_GS.png" alt="G&amp;S"></span>
+      <span class="tap-copy">శుభలేఖను తెరవండి</span>
+    </button>
+  </div>
+</section>
 <main class="site" id="site"><section class="hero"><div class="hero-inner"><div class="kicker">రెండు కుటుంబాలు · రెండు సంప్రదాయాలు · ఒక అందమైన ప్రయాణం</div>
 <div class="hero-peacocks"><span>శుభం</span><span>మంగళం</span></div><img class="logo" src="Logo_GS.png" alt=""><div class="hero-ornaments"><i class="line"></i><span class="lotus">♧</span><i class="line"></i></div><h2>కింతాడ వారి పెళ్లి పిలుపు</h2><div class="names">గోపిక <span style="color:#c99b42">&amp;</span> శివ శంకర్</div><p class="date">25 · 26 · 31 December 2026<br>Kannur · Hyderabad</p></div></section>
 
@@ -250,10 +290,14 @@ html,body{width:100%;max-width:100%;overflow-x:hidden} body.invite-lock{overflow
 </div></div></section><section class="closing"><img class="logo" src="Logo_GS.png" alt=""><h2>మా ఆనందంలో మీరు భాగస్వాములు కావాలి</h2><p>కన్నూర్ నుండి హైదరాబాద్ వరకు — రెండు సంప్రదాయాలు, రెండు కుటుంబాలు, ఒక జీవిత ప్రయాణం.</p><p style="color:#efd89c">గోపిక & శివ శంకర్</p></section><footer class="footer">25 · 26 · 31 December 2026 · Kannur & Hyderabad</footer></main><script>
 function openInvitation(){
  const opening=document.getElementById('opening'), site=document.getElementById('site');
- if(opening.classList.contains('revealing')) return;
+ if(!opening || opening.classList.contains('revealing')) return;
  opening.classList.add('revealing');
- setTimeout(()=>{ site.classList.add('open'); window.scrollTo(0,0); },850);
- setTimeout(()=>{ opening.style.display='none'; document.body.classList.remove('invite-lock'); },1650);
+ // 0–0.8s: seal glows and flap opens; 0.55–1.75s: invitation rises out.
+ // Then the gate itself dissolves and the website begins at the Kinthada invitation hero.
+ setTimeout(()=>opening.classList.add('card-revealed'),650);
+ setTimeout(()=>{ site.classList.add('open'); document.body.classList.remove('invite-lock'); window.scrollTo({top:0,left:0,behavior:'auto'}); },1850);
+ setTimeout(()=>opening.classList.add('gate-away'),1900);
+ setTimeout(()=>{ opening.style.display='none'; },2750);
 }
 const weddingEvents=[
 {name:"Sangeet · సంగీత్ సంధ్య",start:"2026-12-25T17:00:00+05:30",end:"2026-12-25T21:00:00+05:30"},
@@ -272,7 +316,7 @@ const days=Math.floor(diff/86400000);diff%=86400000;const hours=Math.floor(diff/
 const mins=Math.floor(diff/60000);diff%=60000;const secs=Math.floor(diff/1000);
 document.getElementById("cdDays").textContent=days;document.getElementById("cdHours").textContent=String(hours).padStart(2,"0");
 document.getElementById("cdMinutes").textContent=String(mins).padStart(2,"0");document.getElementById("cdSeconds").textContent=String(secs).padStart(2,"0")}
-updateWeddingClock();setInterval(updateWeddingClock,1000);
+/* legacy compact clock removed in V8 */
 
 function updateRichClock(){
  const now=new Date(), active=weddingEvents.find(e=>now>=new Date(e.start)&&now<new Date(e.end));
