@@ -21,9 +21,102 @@
 .memory-card p{line-height:1.9;color:var(--muted);max-width:620px;margin:0 auto 24px}.memory-card .btn{font-size:1rem;padding:15px 26px}
 .venue-soon{font-style:italic;color:#9b6a1e}
 
+
+/* V3 — Rich Telugu invitation redesign */
+body{background:#f8eed9;color:#4d1925}
+.hero{min-height:92vh;padding:95px 20px 80px;background:
+radial-gradient(circle at 50% 15%,rgba(255,244,201,.94),rgba(248,232,195,.92) 48%,rgba(237,211,159,.82)),
+linear-gradient(135deg,#fbf1dc,#efe0bc);border-bottom:1px solid #c89b4d;position:relative}
+.hero:before,.hero:after{content:"";position:absolute;top:0;bottom:0;width:min(25vw,300px);opacity:.35;background:
+radial-gradient(circle at 50% 16%,transparent 0 40px,#a16f2a 41px 42px,transparent 43px),
+radial-gradient(circle at 50% 42%,transparent 0 70px,#a16f2a 71px 72px,transparent 73px)}
+.hero:before{left:0}.hero:after{right:0;transform:scaleX(-1)}
+.hero-inner{max-width:1000px;position:relative;z-index:2}
+.hero .logo{width:120px;filter:drop-shadow(0 8px 18px #5b1a2440)}
+.hero h2{font-size:clamp(2.7rem,7vw,5.8rem);color:#7b1428;text-shadow:0 2px #fff8}
+.hero .names{font-size:clamp(3.2rem,9vw,7rem);line-height:.9;color:#581221}
+.hero .date{font-size:1.05rem;letter-spacing:.08em;color:#80502d}
+.hero .livebar{display:none!important}
+.hero-ornaments{display:flex;justify-content:center;align-items:center;gap:22px;margin:18px auto 5px;color:#a77828}
+.hero-ornaments .lotus{font-size:2.1rem}.hero-ornaments .line{width:90px;height:1px;background:#bd9146}
+.hero-peacocks{display:flex;justify-content:space-between;max-width:730px;margin:22px auto -10px;color:#9c722e;font-family:Georgia,serif;font-size:1rem;letter-spacing:.08em}
+.hero-peacocks span:before{content:"♛";display:block;font-size:2.5rem;transform:rotate(-12deg);opacity:.65}
+.hero-peacocks span:last-child:before{transform:scaleX(-1) rotate(-12deg)}
+
+.royal-countdown{position:relative;overflow:hidden;padding:90px 20px;background:#4a1521;color:#fff}
+.royal-countdown:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 40%,#a8792c25,transparent 38%)}
+.countdown-shell{position:relative;z-index:1;width:min(1120px,100%);margin:auto;display:grid;grid-template-columns:.82fr 1.18fr;align-items:center;gap:50px}
+.couple-art{min-height:510px;display:grid;place-items:end center;position:relative}
+.couple-art:before{content:"";position:absolute;width:360px;height:480px;border:1px solid #d5ad60;border-radius:180px 180px 18px 18px;box-shadow:0 0 0 10px #d5ad6014}
+.couple-art svg{width:min(420px,100%);height:auto;position:relative;z-index:1;filter:drop-shadow(0 20px 30px #17050a88)}
+.countdown-copy .kicker{color:#e3bd72}.countdown-copy h2{font:500 clamp(2.7rem,6vw,5rem) 'Noto Serif Telugu',Georgia,serif;margin:8px 0 12px;color:#fff}
+.countdown-copy .event-meta{color:#e9d7b3;margin-bottom:26px}
+.lux-countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.lux-countdown div{padding:20px 8px;text-align:center;border:1px solid #d9b76b55;background:#fff8ed0d}
+.lux-countdown strong{display:block;font:600 2rem Georgia,serif;color:#f0d28e}.lux-countdown span{font-size:.7rem;color:#d8c5a4}
+.countdown-note{margin-top:25px;color:#d9c6a5;line-height:1.8}
+
+.memories{padding:100px 20px!important;background:#f7ecd4!important}
+.memory-card{display:grid!important;grid-template-columns:150px 1fr auto!important;align-items:center!important;gap:30px!important;max-width:1080px!important;padding:38px 45px!important;text-align:left!important;background:#fffaf0!important;border:1px solid #c89b4d!important;box-shadow:0 25px 70px #4d19251c!important}
+.memory-card:before{content:""!important;position:absolute!important;inset:10px!important;border:1px solid #d8b87355!important}
+.memory-card .logo{display:none!important}
+.memory-art{width:120px;height:100px;position:relative;display:grid;place-items:center}
+.memory-art .camera{width:74px;height:54px;border:2px solid #9a6a28;border-radius:10px;position:relative}
+.memory-art .camera:before{content:"";position:absolute;width:25px;height:12px;border:2px solid #9a6a28;border-bottom:0;border-radius:6px 6px 0 0;left:12px;top:-13px}
+.memory-art .camera:after{content:"";position:absolute;width:24px;height:24px;border:2px solid #9a6a28;border-radius:50%;left:23px;top:13px}
+.memory-copy .kicker{color:#a27429}.memory-copy h2{font-size:clamp(2rem,4vw,3.2rem)!important;margin:5px 0!important}.memory-copy p{margin:0!important}
+.memory-card>.btn{white-space:nowrap;position:relative}
+
+.contact-rich{padding:100px 20px;background:#fff9ec;text-align:center}
+.contact-rich .wrap2{width:min(1040px,100%);margin:auto}.contact-rich h2{font:500 clamp(2.7rem,6vw,4.8rem) 'Noto Serif Telugu',Georgia,serif;color:#681326;margin:5px 0 15px}
+.contact-intro2{color:#7b6357;margin-bottom:40px}.contact-grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px;text-align:left}
+.family-contact{padding:35px;border:1px solid #d3ae69;background:#fffdf7;box-shadow:0 16px 40px #5b1a2412;position:relative}
+.family-contact:before{content:"❀";position:absolute;right:24px;top:20px;color:#bd9146;font-size:1.7rem}
+.family-contact .label{font-size:.7rem;letter-spacing:.15em;color:#a27429;text-transform:uppercase}
+.family-contact h3{font:500 2rem Georgia,serif;color:#681326;margin:7px 0 18px}.person2{padding:15px 0;border-top:1px solid #d9c7a4}
+.person2 strong{display:block;color:#551522;font-size:1.05rem}.person2 a{display:inline-block;margin-top:5px;color:#95661f;text-decoration:none}
+.person2 a:hover{text-decoration:underline}
+
+@media(max-width:760px){
+.hero{min-height:auto;padding:70px 18px}.hero-peacocks{padding:0 15px}.countdown-shell{grid-template-columns:1fr;gap:25px;text-align:center}
+.couple-art{min-height:360px}.couple-art:before{width:270px;height:340px}.couple-art svg{max-width:300px}
+.lux-countdown{grid-template-columns:repeat(2,1fr)}
+.memory-card{grid-template-columns:1fr!important;text-align:center!important;padding:42px 25px!important}.memory-art{margin:auto}.memory-card>.btn{justify-self:center}
+.contact-grid2{grid-template-columns:1fr}.family-contact{padding:28px 23px}
+}
+
 </style></head><body>
 <section class="opening" id="opening"><div class="opening-card"><div class="auspicious">శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు</div><img class="logo" src="Logo_GS.png" alt="G&S గణేశ చిహ్నం"><h1>కింతాడ వారి<br>పెండ్లి పిలుపు</h1><p>మా ఇంటి శుభకార్యానికి<br>మీకు మా హృదయపూర్వక ఆహ్వానం</p><button class="openbtn" onclick="openInvitation()">శుభలేఖను తెరవండి ✦</button></div></section>
-<main class="site" id="site"><section class="hero"><div class="hero-inner"><div class="kicker">రెండు కుటుంబాలు · రెండు సంప్రదాయాలు · ఒక అందమైన ప్రయాణం</div><img class="logo" src="Logo_GS.png" alt=""><h2>వివాహ శుభలేఖ</h2><div class="names">గోపిక <span style="color:#c99b42">&amp;</span> శివ శంకర్</div><p class="date">25 · 26 · 31 December 2026<br>Kannur · Hyderabad</p><div class="livebar" id="liveWedding"><div class="live-label">LIVE WEDDING COUNTDOWN</div><div class="live-title" id="liveTitle">మా వేడుకలకు ఇంకా...</div><div class="countdown" id="countdown"><b><span id="cdDays">--</span><small>Days</small></b><b><span id="cdHours">--</span><small>Hours</small></b><b><span id="cdMinutes">--</span><small>Minutes</small></b><b><span id="cdSeconds">--</span><small>Seconds</small></b></div></div></div></section>
+<main class="site" id="site"><section class="hero"><div class="hero-inner"><div class="kicker">రెండు కుటుంబాలు · రెండు సంప్రదాయాలు · ఒక అందమైన ప్రయాణం</div>
+<div class="hero-peacocks"><span>శుభం</span><span>మంగళం</span></div><img class="logo" src="Logo_GS.png" alt=""><div class="hero-ornaments"><i class="line"></i><span class="lotus">♧</span><i class="line"></i></div><h2>కింతాడ వారి పెళ్లి పిలుపు</h2><div class="names">గోపిక <span style="color:#c99b42">&amp;</span> శివ శంకర్</div><p class="date">25 · 26 · 31 December 2026<br>Kannur · Hyderabad</p><div class="livebar" id="liveWedding"><div class="live-label">LIVE WEDDING COUNTDOWN</div><div class="live-title" id="liveTitle">మా వేడుకలకు ఇంకా...</div><div class="countdown" id="countdown"><b><span id="cdDays">--</span><small>Days</small></b><b><span id="cdHours">--</span><small>Hours</small></b><b><span id="cdMinutes">--</span><small>Minutes</small></b><b><span id="cdSeconds">--</span><small>Seconds</small></b></div></div></div></section>
+<section class="royal-countdown" id="countdown-section">
+<div class="countdown-shell">
+<div class="couple-art" aria-hidden="true">
+<svg viewBox="0 0 420 520" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#e8c06c"/><stop offset="1" stop-color="#9e6725"/></linearGradient></defs>
+<!-- groom -->
+<circle cx="145" cy="115" r="34" fill="#a96f49"/><path d="M112 106q34-55 68 0v-18q-8-40-35-40t-36 42z" fill="#1d1715"/>
+<path d="M95 180q50-50 100 0l20 245H78z" fill="#f3e4c4" stroke="#d4aa5d" stroke-width="3"/>
+<path d="M95 190h100M105 220h85" stroke="#b47a29" stroke-width="7"/><path d="M118 185v230M174 185v230" stroke="#d2a14c" stroke-width="3"/>
+<!-- bride -->
+<circle cx="285" cy="120" r="32" fill="#a96f49"/><path d="M252 110q32-57 67 0q-8-57-35-57t-32 57z" fill="#171311"/>
+<path d="M248 175q38-39 78 0l42 248H220z" fill="#7e162b" stroke="#d5aa58" stroke-width="3"/>
+<path d="M249 180q38 32 76 0M236 315h115M229 350h130" stroke="url(#g)" stroke-width="8"/>
+<path d="M282 75v-27" stroke="#f5e9cf" stroke-width="7"/><g fill="#f5e9cf"><circle cx="282" cy="45" r="8"/><circle cx="282" cy="31" r="7"/><circle cx="282" cy="18" r="6"/></g>
+<path d="M115 425h88M224 423h145" stroke="#d6aa5d" stroke-width="5"/>
+</svg>
+</div>
+<div class="countdown-copy">
+<div class="kicker">LIVE WEDDING COUNTDOWN</div>
+<h2 id="richLiveTitle">Next: Sangeet · సంగీత్ సంధ్య</h2>
+<div class="event-meta" id="richEventMeta">25 December 2026 · 5:00 PM – 9:00 PM</div>
+<div class="lux-countdown" id="richCountdown">
+<div><strong id="rDays">--</strong><span>DAYS</span></div><div><strong id="rHours">--</strong><span>HOURS</span></div>
+<div><strong id="rMinutes">--</strong><span>MINUTES</span></div><div><strong id="rSeconds">--</strong><span>SECONDS</span></div>
+</div>
+<p class="countdown-note">Two families, two traditions, and one beautiful journey — మా ఆనందాన్ని మీతో పంచుకోవడానికి ఎదురుచూస్తున్నాము.</p>
+</div></div></section>
+
 <section class="section invitation"><div class="wrap"><div class="heading"><div class="kicker">సాదర ఆహ్వానం</div><h2>మా కుటుంబ శుభకార్యం</h2></div><div class="inv-card"><img class="logo" src="Logo_GS.png" alt=""><h3>శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు</h3><p class="parents">శ్రీమతి గన్నవరపు విశాలాక్షి<br>శ్రీ కింతాడ కాశీ విశ్వనాథం</p><p class="formal">తమ కుమారుడు</p><div class="couple"><div class="person"><strong>చి. కింతాడ శివ శంకర్</strong><small>M.Sc. (Instrumentation)<br>Process Engineer, Germany</small></div><div class="amp">తో</div><div class="person"><strong>చి. ల. సౌ. గోపిక శ్రీషన్</strong><small>M.Sc. (Electronics Engineering)<br>Development Engineer, Germany</small></div></div><p class="formal">శ్రీమతి షీనా శ్రీషన్ మరియు శ్రీ శ్రీషన్ లీలా శ్రీధరన్ గార్ల కుమార్తె గోపికతో జరిగే వివాహ మహోత్సవానికి తమరు సకుటుంబ సపరివార సమేతంగా విచ్చేసి, వధూవరులను ఆశీర్వదించి, మా ఆతిథ్యాన్ని స్వీకరించి ఈ శుభకార్యాన్ని జయప్రదం చేయవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము.</p><div class="family-note"><strong>ప్రత్యేక ఆహ్వానం</strong><br>కింతాడ ప్రవళిక & మల్లోజు రాకేష్<br><small>చిన్నారుల ప్రేమతో — మల్లోజు ఆస్థా · మల్లోజు ఆరవ్</small></div></div></div></section>
 <section class="section events"><div class="wrap"><div class="heading"><div class="kicker">25–26 December 2026</div><h2>Kerala Celebrations · కేరళ వేడుకలు</h2><p>Music, family, tradition &amp; joy — మా వేడుకల అందమైన ఆరంభం.</p></div>
 <article class="event"><div class="photo" style="background-image:url('celebration-evening.jpg')"></div><div class="copy"><div class="num">01 · KANNUR</div><h3>Sangeet · సంగీత్ సంధ్య</h3><p>An evening of music, dance, laughter and family — పాటలు, నృత్యాలు, ఆనందంతో మా వేడుకల ఆరంభం.</p><div class="details"><div><span>Date · తేదీ</span><strong>Friday · 25 December 2026</strong></div><div><span>Time · సమయం</span><strong>5:00 PM – 9:00 PM</strong></div><div><span>Venue · వేదిక</span><strong class="venue-soon">Venue to be announced</strong></div></div><div class="actions"><a class="btn alt" href="calendar/sangeet.ics">Add to Calendar · క్యాలెండర్</a></div></div></article>
@@ -33,7 +126,23 @@
 <article class="event"><div class="photo" style="background:linear-gradient(135deg,#f4d44f,#d69a18);display:grid;place-items:center;color:#6a3c00;font-size:5rem">✺</div><div class="copy"><div class="num">04 · HALDI</div><h3>Haldi · పసుపు వేడుక</h3><p>పసుపు రంగుల మధ్య నవ్వులు, ఆశీర్వాదాలు, కుటుంబ ఆనందంతో జరిగే వేడుక.</p><div class="details"><div><span>సమయం</span><strong>ఉదయం 10:00 – మధ్యాహ్నం 12:30</strong></div><div><span>వేదిక</span><strong>The Park Hyderabad</strong></div><div><span>డ్రెస్ కోడ్</span><strong>Yellow</strong></div><div><span>ఆతిథ్యం</span><strong>శాకాహార భోజనం</strong></div></div><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=The+Park+Hyderabad">దారి చూపించండి ↗</a><a class="btn alt" href="calendar/haldi.ics">క్యాలెండర్‌లో చేర్చండి</a></div></div></article>
 <article class="event"><div class="photo" style="background-image:url('hyderabad-wedding-corrected.jpg')"></div><div class="copy"><div class="num">05 · తెలుగు వివాహం</div><h3>వివాహ మహోత్సవం</h3><p>తెలుగు సంప్రదాయాల నడుమ, పెద్దల ఆశీర్వాదాలతో మా జీవిత ప్రయాణానికి శుభారంభం.</p><div class="details"><div><span>వేడుక ప్రారంభం</span><strong>సాయంత్రం 5:00 గంటలకు</strong></div><div><span>శుభ ముహూర్తం</span><strong class="muhurtham">సాయంత్రం 7:05 గంటలకు</strong></div><div><span>వేదిక</span><strong>Marigold Hotel, Hyderabad</strong></div><div><span>ఆతిథ్యం</span><strong>శాకాహార విందు</strong></div></div><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Marigold+Hotel+Hyderabad">దారి చూపించండి ↗</a><a class="btn alt" href="calendar/telugu-wedding.ics">క్యాలెండర్‌లో చేర్చండి</a></div></div></article></div></section>
 <section class="section family"><div class="wrap"><div class="heading"><div class="kicker">మా కుటుంబాల ప్రేమతో</div><h2>మీ రాకే మా ఆనందం</h2></div><div class="family-grid"><div class="family-card"><h3>వరుని కుటుంబం</h3><p><strong>శ్రీమతి గన్నవరపు విశాలాక్షి</strong><br><strong>శ్రీ కింతాడ కాశీ విశ్వనాథం</strong></p><p>కింతాడ ప్రవళిక & మల్లోజు రాకేష్<br>మల్లోజు ఆస్థా · మల్లోజు ఆరవ్</p></div><div class="family-card"><h3>వధువు కుటుంబం</h3><p><strong>శ్రీమతి లీలా ఎస్. శ్రీషన్</strong><br><strong>శ్రీ షీనా శ్రీషన్</strong></p><p>మీ ఆశీస్సులు మా కొత్త జీవితానికి అమూల్యమైన కానుక.</p></div></div></div></section>
-<section class="section memories" id="memories"><div class="wrap"><div class="memory-card"><img class="logo" src="Logo_GS.png" alt=""><div class="kicker">OUR WEDDING MEMORIES</div><h2>మీ జ్ఞాపకాలను మాతో పంచుకోండి</h2><p>మీరు తీసిన అందమైన photos &amp; videos మా పెళ్లి జ్ఞాపకాలలో భాగం కావాలి. Upload చేయడానికి క్రింది button నొక్కండి.</p><a class="btn" target="_blank" rel="noopener" href="https://weduploader.com/upload/SmQwgVJose9uJExc">Share Wedding Memories ↗</a></div></div></section><section class="closing"><img class="logo" src="Logo_GS.png" alt=""><h2>మా ఆనందంలో మీరు భాగస్వాములు కావాలి</h2><p>కన్నూర్ నుండి హైదరాబాద్ వరకు — రెండు సంప్రదాయాలు, రెండు కుటుంబాలు, ఒక జీవిత ప్రయాణం.</p><p style="color:#efd89c">గోపిక & శివ శంకర్</p></section><footer class="footer">25 · 26 · 31 December 2026 · Kannur & Hyderabad</footer></main><script>
+<section class="section memories" id="memories"><div class="wrap">
+<div class="memory-card">
+<div class="memory-art" aria-hidden="true"><div class="camera"></div></div>
+<div class="memory-copy"><div class="kicker">OUR WEDDING MEMORIES</div><h2>మీ జ్ఞాపకాలను మాతో పంచుకోండి</h2>
+<p>మీరు తీసిన అందమైన photos &amp; videos మా పెళ్లి జ్ఞాపకాలలో భాగం కావాలి.</p></div>
+<a class="btn" target="_blank" rel="noopener" href="https://weduploader.com/upload/SmQwgVJose9uJExc">Share Memories ↗</a>
+</div></div></section><section class="contact-rich" id="contact"><div class="wrap2">
+<div class="kicker">GUEST ASSISTANCE · సంప్రదించండి</div><h2>మేము మీకు సహాయం చేయడానికి సిద్ధంగా ఉన్నాము</h2>
+<p class="contact-intro2">వేడుకలు, ప్రయాణం లేదా వేదిక వివరాల కోసం మా కుటుంబ సభ్యులను సంప్రదించండి.</p>
+<div class="contact-grid2">
+<article class="family-contact"><div class="label">Bride’s Family · Kerala Wedding</div><h3>Gopika’s Family</h3>
+<div class="person2"><strong>Sreeshan L. S.</strong><a href="tel:+919447082270">+91 94470 82270</a></div>
+<div class="person2"><strong>Gokul Sreeshan</strong><a href="tel:+918281920708">+91 82819 20708</a></div></article>
+<article class="family-contact"><div class="label">Groom’s Family · Hyderabad Wedding</div><h3>Siva’s Family</h3>
+<div class="person2"><strong>K. K. Viswanadham</strong><a href="tel:+919392623481">+91 93926 23481</a></div>
+<div class="person2"><strong>K. Pravalika</strong><a href="tel:+916303070066">+91 63030 70066</a></div></article>
+</div></div></section><section class="closing"><img class="logo" src="Logo_GS.png" alt=""><h2>మా ఆనందంలో మీరు భాగస్వాములు కావాలి</h2><p>కన్నూర్ నుండి హైదరాబాద్ వరకు — రెండు సంప్రదాయాలు, రెండు కుటుంబాలు, ఒక జీవిత ప్రయాణం.</p><p style="color:#efd89c">గోపిక & శివ శంకర్</p></section><footer class="footer">25 · 26 · 31 December 2026 · Kannur & Hyderabad</footer></main><script>
 function openInvitation(){document.getElementById('site').classList.add('open');document.getElementById('opening').style.display='none';window.scrollTo(0,0)}
 const weddingEvents=[
 {name:"Sangeet · సంగీత్ సంధ్య",start:"2026-12-25T17:00:00+05:30",end:"2026-12-25T21:00:00+05:30"},
@@ -53,4 +162,26 @@ const mins=Math.floor(diff/60000);diff%=60000;const secs=Math.floor(diff/1000);
 document.getElementById("cdDays").textContent=days;document.getElementById("cdHours").textContent=String(hours).padStart(2,"0");
 document.getElementById("cdMinutes").textContent=String(mins).padStart(2,"0");document.getElementById("cdSeconds").textContent=String(secs).padStart(2,"0")}
 updateWeddingClock();setInterval(updateWeddingClock,1000);
+
+function updateRichClock(){
+ const now=new Date(), active=weddingEvents.find(e=>now>=new Date(e.start)&&now<new Date(e.end));
+ const title=document.getElementById("richLiveTitle"), meta=document.getElementById("richEventMeta"), box=document.getElementById("richCountdown");
+ if(!title)return;
+ if(active){title.textContent="Happening now ❤️ "+active.name;meta.textContent="మా వేడుక ఇప్పుడు జరుగుతోంది";box.style.display="none";return}
+ const next=weddingEvents.find(e=>now<new Date(e.start));
+ if(!next){title.textContent="Thank you for celebrating with us ❤️";meta.textContent="మా ఆనందంలో భాగమైనందుకు ధన్యవాదాలు";box.style.display="none";return}
+ box.style.display="grid";title.textContent="Next: "+next.name;
+ const labels={
+ "Sangeet · సంగీత్ సంధ్య":"25 December 2026 · 5:00 PM – 9:00 PM",
+ "Kerala Wedding · కేరళ వివాహం":"26 December 2026 · 10:30 AM",
+ "Thread Ceremony · జంధ్యాల కార్యక్రమం":"31 December 2026 · Morning",
+ "Haldi · పసుపు వేడుక":"31 December 2026 · Morning",
+ "Telugu Wedding · వివాహ మహోత్సవం":"31 December 2026 · 5:00 PM onwards · Muhurtham 7:05 PM"};
+ meta.textContent=labels[next.name]||"";
+ let d=Math.max(0,new Date(next.start)-now),days=Math.floor(d/86400000);d%=86400000;
+ let h=Math.floor(d/3600000);d%=3600000;let m=Math.floor(d/60000);d%=60000;let s=Math.floor(d/1000);
+ document.getElementById("rDays").textContent=days;document.getElementById("rHours").textContent=String(h).padStart(2,"0");
+ document.getElementById("rMinutes").textContent=String(m).padStart(2,"0");document.getElementById("rSeconds").textContent=String(s).padStart(2,"0");
+}
+updateRichClock();setInterval(updateRichClock,1000);
 </script></body></html>
