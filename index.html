@@ -211,7 +211,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden} body.invite-lock{overflow
 .env-back{position:absolute;inset:0;background:linear-gradient(145deg,#6e142b,#4a0819);z-index:0}
 .env-flap{position:absolute;left:0;right:0;top:0;height:52%;z-index:12;background:linear-gradient(160deg,#7a1b35,#571022);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0;backface-visibility:hidden;transition:transform 1s cubic-bezier(.25,.7,.2,1),filter .5s ease;box-shadow:inset 0 1px #e0aa5570}
 .env-left,.env-right,.env-bottom{position:absolute;inset:0;z-index:7;pointer-events:none}.env-left{background:linear-gradient(130deg,#671127,#4b0919);clip-path:polygon(0 0,51% 50%,0 100%)}.env-right{background:linear-gradient(230deg,#671127,#4b0919);clip-path:polygon(100% 0,49% 50%,100% 100%)}.env-bottom{background:linear-gradient(0deg,#420613,#5b0d21);clip-path:polygon(0 100%,50% 49%,100% 100%)}
-.vine,.lotus-mark{position:absolute;z-index:15;color:#b78335;pointer-events:none;text-shadow:0 0 16px #e3b25822}.vine{top:20%;font:400 5.8rem Georgia,serif;opacity:.55}.vine-l{left:10%;transform:rotate(28deg)}.vine-r{right:10%;transform:scaleX(-1) rotate(28deg)}.lotus-mark{top:45%;font:400 3.2rem Georgia,serif;color:#d2a14d}.lotus-l{left:13%}.lotus-r{right:13%}
+.peacock-mark,.lotus-mark{position:absolute;z-index:15;pointer-events:none;color:#c99743;text-shadow:0 0 16px #e3b25822}.peacock-mark{top:20%;width:78px;height:112px;font-size:0;opacity:.82}.peacock-mark:before{content:"";position:absolute;inset:0;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 130'%3E%3Cg fill='none' stroke='%23c99743' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M48 22c-7 8-9 20-7 31 2 12 9 20 18 25-11 3-21 10-27 20-5 8-7 18-5 27 8-8 18-13 29-15-8 6-13 12-15 19 13-6 23-15 28-27 5-13 3-26-5-37-5-7-9-15-8-24 1-8 6-15 13-19-9-2-17-2-23 0z'/%3E%3Cpath d='M60 20c6-8 13-10 20-7-5 5-10 8-16 9M53 15c-1-6 1-10 5-13M61 14c3-6 7-9 12-9M42 86c7 2 13 6 18 12M35 101c7 0 13 2 19 7'/%3E%3Ccircle cx='62' cy='17' r='1.7' fill='%23c99743'/%3E%3C/g%3E%3C/svg%3E")}.peacock-l{left:10%}.peacock-r{right:10%;transform:scaleX(-1)}.lotus-mark{top:44%;width:72px;height:54px;font-size:0}.lotus-mark:before{content:"";position:absolute;inset:0;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 70'%3E%3Cg fill='none' stroke='%23d2a14d' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 57C34 47 28 32 50 10c22 22 16 37 0 47zM50 57C28 54 16 43 18 24c18 4 29 15 32 33zM50 57c22-3 34-14 32-33-18 4-29 15-32 33zM50 57C34 61 21 58 9 48c15-5 28-2 41 9zM50 57c16 4 29 1 41-9-15-5-28-2-41 9zM24 62h52'/%3E%3C/g%3E%3C/svg%3E")}.lotus-l{left:11%}.lotus-r{right:11%}
 .wax-seal{position:absolute;z-index:30;left:50%;top:50%;width:108px;height:108px;transform:translate(-50%,-50%);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 38% 30%,#fff4d1 0,#e6c27d 36%,#ad773a 72%,#71431e 100%);border:5px double #c4975b;box-shadow:0 8px 18px #190207aa,0 0 0 8px #5a1a2466,0 0 0 1px #f2d79b;transition:transform .45s ease,box-shadow .45s ease,opacity .35s ease}.wax-seal img{width:72%;height:72%;object-fit:contain;filter:sepia(1) saturate(1.2) contrast(1.05)}
 .tap-copy{position:absolute;z-index:25;bottom:8.5%;left:0;right:0;font:600 .78rem 'Noto Sans Telugu',sans-serif;letter-spacing:.14em;color:#efd99d;text-shadow:0 2px 8px #26040d}
 .invite-sheet{position:absolute;z-index:3;left:50%;top:50%;width:84%;height:82%;transform:translate(-50%,-43%) scale(.92);opacity:0;background:linear-gradient(145deg,#fffdf7,#faebca);border:1px solid #c9973d;box-shadow:0 26px 70px #16010788;color:#591122;text-align:center;padding:18px;transition:transform 1.15s cubic-bezier(.16,.86,.25,1),opacity .3s ease;pointer-events:none}.invite-sheet:before{content:"";position:absolute;inset:9px;border:1px solid #d6b36e88}.sheet-inner{height:100%;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px}.sheet-inner img{width:82px;margin-bottom:8px}.sheet-kicker{font:600 clamp(.7rem,2vw,.85rem) 'Noto Serif Telugu',serif;color:#a47428;letter-spacing:.08em}.sheet-inner h2{font:700 clamp(2rem,7vw,3.1rem)/1.35 'Noto Serif Telugu',serif;color:#73142a;margin:22px 0 14px}.sheet-rule{display:flex;align-items:center;gap:12px;color:#c9973d;margin:0 0 14px}.sheet-rule i{display:block;width:48px;height:1px;background:#c9973d}.sheet-inner p{font:600 clamp(1.35rem,5vw,2rem) 'Noto Serif Telugu',serif;margin:5px 0;color:#5c1223}.sheet-inner p b{color:#c9973d}.sheet-inner small{margin-top:14px;letter-spacing:.12em;color:#87573c}
@@ -237,8 +237,8 @@ html,body{width:100%;max-width:100%;overflow-x:hidden} body.invite-lock{overflow
       <span class="env-back"></span>
       <span class="env-flap"></span>
       <span class="env-left"></span><span class="env-right"></span><span class="env-bottom"></span>
-      <span class="vine vine-l">❧</span><span class="vine vine-r">❧</span>
-      <span class="lotus-mark lotus-l">♧</span><span class="lotus-mark lotus-r">♧</span>
+      <span class="peacock-mark peacock-l" aria-hidden="true">♛</span><span class="peacock-mark peacock-r" aria-hidden="true">♛</span>
+      <span class="lotus-mark lotus-l" aria-hidden="true">♨</span><span class="lotus-mark lotus-r" aria-hidden="true">♨</span>
       <span class="wax-seal"><img src="Logo_GS.png" alt="G&amp;S"></span>
       <span class="tap-copy">శుభలేఖను తెరవండి</span>
     </button>
@@ -255,7 +255,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden} body.invite-lock{overflow
 <div class="countdown-copy">
 <div class="kicker">LIVE WEDDING COUNTDOWN</div>
 <h2 id="richLiveTitle">Celebrations Begin Soon</h2>
-<div class="event-meta" id="richEventMeta">25 December 2026 · 5:00 PM – 9:00 PM IST</div>
+
 <div class="lux-countdown" id="richCountdown">
 <div><strong id="rDays">--</strong><span>DAYS</span></div><div><strong id="rHours">--</strong><span>HOURS</span></div>
 <div><strong id="rMinutes">--</strong><span>MINUTES</span></div><div><strong id="rSeconds">--</strong><span>SECONDS</span></div>
@@ -320,19 +320,13 @@ document.getElementById("cdMinutes").textContent=String(mins).padStart(2,"0");do
 
 function updateRichClock(){
  const now=new Date(), active=weddingEvents.find(e=>now>=new Date(e.start)&&now<new Date(e.end));
- const title=document.getElementById("richLiveTitle"), meta=document.getElementById("richEventMeta"), box=document.getElementById("richCountdown");
+ const title=document.getElementById("richLiveTitle"), box=document.getElementById("richCountdown");
  if(!title)return;
- if(active){title.textContent="Celebrations Begin Soon";meta.textContent="25 December 2026 · 5:00 PM – 9:00 PM IST";box.style.display="none";return}
+ if(active){title.textContent="Celebrations Begin Soon";box.style.display="grid";}
  const next=weddingEvents.find(e=>now<new Date(e.start));
- if(!next){title.textContent="Celebrations Begin Soon";meta.textContent="";box.style.display="none";return}
+ if(!next){title.textContent="Celebrations Begin Soon";box.style.display="none";return}
  box.style.display="grid";title.textContent="Celebrations Begin Soon";
- const labels={
- "Sangeet · సంగీత్ సంధ్య":"25 December 2026 · 5:00 PM – 9:00 PM IST",
- "Kerala Wedding · కేరళ వివాహం":"26 December 2026 · 10:30 AM IST",
- "Thread Ceremony · జంధ్యాల కార్యక్రమం":"31 December 2026 · Morning",
- "Haldi · పసుపు వేడుక":"31 December 2026 · Morning",
- "Telugu Wedding · వివాహ మహోత్సవం":"31 December 2026 · 5:00 PM onwards · Muhurtham 7:05 PM IST"};
- meta.textContent=labels[next.name]||"";
+
  let d=Math.max(0,new Date(next.start)-now),days=Math.floor(d/86400000);d%=86400000;
  let h=Math.floor(d/3600000);d%=3600000;let m=Math.floor(d/60000);d%=60000;let s=Math.floor(d/1000);
  document.getElementById("rDays").textContent=days;document.getElementById("rHours").textContent=String(h).padStart(2,"0");
